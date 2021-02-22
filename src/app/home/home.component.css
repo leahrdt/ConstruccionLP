@@ -1,0 +1,156 @@
+.carrusel{
+    width: 100%;
+    height: 70vh;
+}
+
+.foto{
+    display: block;
+    margin:auto;
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+.tituloPrincipal{
+    margin-top: -20rem;
+    color:black;
+    background-color: white;
+    opacity:0.8;
+}
+.pPrincipal{
+    color: white;
+    background-color:black;
+    opacity:0.8;
+    margin:0.5;
+}
+
+
+
+.qsomos{
+    padding: 3rem;
+    text-align: center;
+    font-size: larger;
+}
+
+.carruselObras{
+    width: 100%;
+    height: 50vh;
+}
+
+.fotoObras{
+    display: block;
+    margin:auto;
+    object-fit: cover;
+
+    width: 100%;
+    height: 40vh;
+}
+
+
+.areaServicios{
+    margin-bottom: 5rem;
+
+
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+  }
+
+
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;
+  }
+  
+  .cartaPort{
+    margin-bottom: 2rem;
+  }
+
+
+  .footer{
+      background: black;
+      height: 4rem;
+      text-align: center;
+      padding:1rem;
+      color:white;
+  }
+
+  .textRight{
+    text-align: right;
+  }
+
+
+  .obra{
+      text-align: center;
+  }
+
+  .obraP{
+    text-align: center;
+  }
+
+  #iconsContact{
+      display: flex;
+    align-items: flex-end;
+    margin-left: 20%;
+    margin-bottom: 2rem;
+  }
+

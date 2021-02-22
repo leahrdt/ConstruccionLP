@@ -1,0 +1,80 @@
+INSTALAR typescript
+
+de manera local: npm install typescript --save-dev
+o global nen toda la pc: npm install -g typescript
+
+Para compilar un TS a JS hay que en console hacer..
+tsc main.js (main porq lo que iba a compilar se llama main.ts)
+
+-----
+
+Instalar angular
+
+forma global: npm install -g @angular/cli
+
+ver la version: ng --version
+
+Crear nuevo proyecto
+
+ng new nombredelproyecto
+te hace tres preguntas, puse no no y para css uso el compilador css normal
+
+para lanzar la aplicacioon: ng serve o ng serve --aot=true -o (este segundo pareceria que anda mejor, no se sabe porque)
+
+------
+Crear COMPONENTE
+ng g component nombredelcomponente
+Crear INTERFACE
+ng generate interface interfaces/Pelicula
+Crear SERVICIO
+ng generate service Servicios/pelicula
+crear MODULO
+ng g module Peliculas/peliculas
+------
+
+Instalar bootstrap
+
+npm install bootstrap --save
+luego lo importe en el style.css genetal como: @import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+dato: cada ves que sigo un proyecto dps de un tiempo, conviene poner un npm install, para actualizar los paquetes..
+si salta alguna vulnerabilidad, se arregla con npm audit fix, esto para cualquier proyecto no solo angular
+
+//-------  SERVIDOR
+
+clonar proyecto desde github (es un backend)
+
+git clone https://github.com/juyagu/peliculas-angular-backend.git
+
+entrar a la carpeta que te creo en consola y hacer un npm install
+
+instalamos https://www.apachefriends.org/es/index.html es levantar un servidor de base de datos
+
+apretar star en MySQL
+
+instalar https://dbeaver.io/download/ para manejar la base de datos                               
+- en dBeaver ir a archivo, nuevo, DataBase Conection, mySQL y ahi nomas le das ok, el port tiene q ser el 3306, click derecho en "mySQL- localhost"-editor sql-editor sql (o apretar f3 teniendo seleccionado localhost)
+-(adentro del editor sql)copiar todo lo que esta en Documentos.sql de la carpeta que bajamos de git y pegarlo en el Dbeadver, luego click derecho y exeture-ejecutar script sql
+
+arrancamos el servidor backend: abrimos una terminal en peliculas-angular-backend y ponemos: node index.js
+
+ya esta listao! ahora para ir a pegarle al backend la url es: https://localhost:3001/angular5/peliculas (en ese caso pido las peliculas)
+(para meter un backend acordarse el modeulo htttps client que esta en app.module.ts)
+
+//--Modulos
+para modalizar los componentes, todo componente que corresponda a las peliculas lo encerras en un modulo!
+
+//CREAR PROYECTO PARA EXPORTAR
+Pararse en la carpeta del proyecto,
+ng build (comun)
+o ng build --prod (modo final, para exportar, revisa errores)
+
+y la app termina en dist/nombre de la app
+
+//SUBIR A GITHUB
+
+instalar https://www.npmjs.com/package/angular-cli-ghpages
+pasos:
+instalacion:
+npm i -g angular-cli-ghpages
